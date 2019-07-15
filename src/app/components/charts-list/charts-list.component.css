@@ -1,0 +1,17 @@
+.header {
+    padding-top: 6%;
+    display: flex;
+    padding-bottom: 1%;
+    padding-left: 3%;
+}
+
+.mainCard {
+    width: 24%; 
+    border-radius: 5%; 
+    height: 70%; 
+    margin: 0%
+}
+
+.card-header, .card-footer {
+    background-color: rgb(170, 211, 170);
+}

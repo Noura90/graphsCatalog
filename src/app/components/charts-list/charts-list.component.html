@@ -1,0 +1,44 @@
+<div class="header">
+  <h3 style="letter-spacing: 2px;">Bibliothèque</h3>
+  <select class="form-control" style="width: 15%; margin-left: 70%;">
+    <option>tous types</option>
+    <option>side bar</option>
+    <option>pie</option>
+  </select>
+</div>
+
+<div class="container" style="height: 100%; padding-left: 3%; display: flex">
+  <div 
+  class="card mainCard" 
+  *ngFor="let chart of charts; let i = index"
+  [ngStyle]=" {'margin-left': i!== 0 ? '3%' : '0%' }">
+    <div class="card-header" style="padding-right:0%">
+      <div class="headerIcons" style="margin-left: 75%">
+          <i 
+          class="pencil alternate icon" 
+          style="cursor: pointer;"
+          #singleClick
+          (mouseover)="singleClick.classList.add('animated','swing')"
+          (mouseout)="singleClick.classList.remove('animated','swing')"></i>
+          <i 
+          class="times icon" 
+          style="cursor: pointer;  margin-left: 5%"
+          #multipleClick
+          (mouseover)="multipleClick.classList.add('animated','heartBeat')"
+          (mouseout)="multipleClick.classList.remove('animated','heartBeat')"></i>
+      </div>
+    </div>
+    <img 
+    [src]= "chart.imagePath"
+    class="card-img-top" 
+    alt="side by side chart"
+    >
+    <div class="card-body">
+      <p class="card-text">{{ chart.title }}</p>
+      
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-outline-success">Visualiser</a>
+    </div>
+  </div>
+</div>

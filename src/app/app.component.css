@@ -1,0 +1,53 @@
+
+
+.app {
+    background-color: #fff;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    right: 3%;
+    height: 92%;
+    border-radius: 5px;
+
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    height: 7%;    
+    width: 100%;
+}
+
+.logo {
+    width: 17%;
+    border-bottom: 1px solid rgb(240, 236, 236);
+    border-right: 1px solid rgb(240, 236, 236);
+    text-align: center;
+    padding: 5px;
+}
+
+.mainContainer {
+    display: flex;
+    width:100%;
+    height: 93%;
+    background-color: #fff;
+    position: relative;
+}
+
+.leftContainer {
+    width: 17%;
+    height: 100%;
+    border-right: 1px solid lightgrey;
+  
+}
+
+.rightContainer {
+    width: 83%;
+    height: 100%;
+    background-color:rgb(252, 252, 237);
+}
+
+.card-header i {
+    right: 0%;
+    color: red;
+}

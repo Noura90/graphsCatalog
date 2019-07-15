@@ -1,0 +1,48 @@
+
+
+
+p {
+    padding: 1em;
+    font-size: 15px;
+    color: darkgrey;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 10%;
+    border-bottom: 1px solid rgb(240, 236, 236);
+
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(229, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    align-self: flex-start;
+    padding-top: 10px;
+    padding-left: 4em;
+    cursor: pointer;
+}
+
+
+.selected{
+    background-color: rgb(181, 236, 199) !important;
+    color: rgb(32, 71, 45) !important;
+}
+
+i {
+    color: darkgray;
+}
+
+.selected i {
+    color: rgb(32, 71, 45) !important;
+}
