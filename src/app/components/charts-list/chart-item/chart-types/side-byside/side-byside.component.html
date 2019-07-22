@@ -1,0 +1,50 @@
+<div style="display: flex; position: relative;">
+<div style="width: 90%">
+<dx-chart [dataSource]="dataSource">
+
+
+   <dxo-size [height]="550" ></dxo-size> 
+  <dxo-title [text]="title">
+      <dxo-font color="black" [weight]="600"></dxo-font>
+        <dxo-margin [bottom]="60" [top]="30"></dxo-margin>
+  </dxo-title>
+  
+       <dxo-margin [left]="30" [right]="30">
+       </dxo-margin>
+
+  <dxi-series valueField="currentYear" name="2018/2019" color="lightgreen"></dxi-series>
+  <dxi-series valueField="lastYear" name="2017/2018" color="lightblue"></dxi-series>
+  <dxo-common-series-settings argumentField="activity" type="bar">
+    <dxo-label [visible]="true" [format]="{
+           type: 'fixedPoint',
+           precision: '0'
+       }">
+        <dxo-font [weight]="600" color="black">
+        </dxo-font>
+      </dxo-label>
+  </dxo-common-series-settings>
+  <dxo-common-axis-settings color="lightgray">
+
+    <dxo-common-annotation-settings color="lightgray">
+    </dxo-common-annotation-settings>
+
+  </dxo-common-axis-settings>
+  <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+    <dxo-font color="black" [weight]="600"></dxo-font>
+  </dxo-legend>
+
+  <dxo-argument-axis>
+    <dxo-label>
+      <dxo-font color="black" [weight]="600"></dxo-font>
+    </dxo-label>
+  </dxo-argument-axis>
+
+
+</dx-chart>
+</div>
+<div class="edit-chart">
+<app-chart-configure></app-chart-configure>
+</div>
+
+</div>
+

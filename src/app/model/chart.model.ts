@@ -1,3 +1,5 @@
+import { DataSource } from './datasource.model';
+
 export class Chart {
 
 
@@ -5,5 +7,6 @@ export class Chart {
         public title: string,
         public type: string,
         public createdOn: Date,
-        public imagePath: string) {}
+        public imagePath: string,
+        public dataSource: DataSource) {}
 }

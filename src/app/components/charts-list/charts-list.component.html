@@ -1,13 +1,17 @@
 <div class="header">
   <h3 style="letter-spacing: 2px;">Bibliothèque</h3>
-  <select class="form-control" style="width: 15%; margin-left: 70%;">
+  <select 
+  class="form-control" 
+  style="width: 15%; margin-left: 70%;" 
+  (change)="onTypeSelect()"
+  [(ngModel)]="selectedOption">
     <option>tous types</option>
-    <option>side bar</option>
+    <option>sideByside</option>
     <option>pie</option>
   </select>
 </div>
 
-<div class="container" style="height: 100%; padding-left: 3%; display: flex">
+<div class="container" style="height: 68%; padding-left: 3%; display: flex;">
   <div 
   class="card mainCard" 
   *ngFor="let chart of charts; let i = index"
@@ -38,7 +42,16 @@
       
     </div>
     <div class="card-footer">
-        <a href="#" class="btn btn-outline-success">Visualiser</a>
+        <a
+        class="btn btn-outline-success"
+        [routerLink]="[i, chart.type]"
+       >Visualiser</a>
     </div>
   </div>
+
+</div>
+<div>
+    <button class="massive circular ui icon button customized">
+        <i class="icon plus" style="color: white;"></i>
+      </button>
 </div>

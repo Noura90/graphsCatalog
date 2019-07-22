@@ -8,10 +8,20 @@
 .mainCard {
     width: 24%; 
     border-radius: 5%; 
-    height: 70%; 
+    height: 100%; 
     margin: 0%
 }
 
 .card-header, .card-footer {
     background-color: rgb(170, 211, 170);
 }
+
+.customized {
+    margin-left: 10%; 
+    box-shadow: 0 0 0 1px rgb(170, 211, 170) !important;       
+    color: rgb(170, 211, 170) !important;
+}
+/* 
+.customized i{
+    color: rgb(170, 211, 170) !important;   
+} */

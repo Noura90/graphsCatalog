@@ -1,0 +1,30 @@
+<div style="display: flex; position: relative;">
+   <div style="width: 90%">
+   <dx-pie-chart
+        id="pie"
+        palette="bright"
+        [dataSource]="dataSource">
+        <dxo-title [text]="title">
+            <dxo-margin [bottom]="60" [top]="30"></dxo-margin>
+            <dxo-font color="black" [weight]="600"></dxo-font>
+        </dxo-title>
+        <dxi-series
+            argumentField="origin"
+            valueField="value">
+            <dxo-label [visible]="true">
+                <dxo-connector
+                    [visible]="true"
+                    [width]="1"></dxo-connector>
+            </dxo-label>
+        </dxi-series>
+        <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+            <dxo-margin [top]="30"></dxo-margin>
+        </dxo-legend>
+        <dxo-size [height]="500"></dxo-size>
+    </dx-pie-chart>
+  </div>
+  <div class="edit-chart">
+      <app-chart-configure></app-chart-configure>
+      </div>
+      </div>
+
